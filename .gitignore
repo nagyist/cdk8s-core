@@ -3,6 +3,7 @@
 !/.projen/tasks.json
 !/.projen/deps.json
 !/.projen/files.json
+!/.github/workflows/auto-queue.yml
 !/.github/workflows/pull-request-lint.yml
 !/.github/workflows/auto-approve.yml
 !/package.json
@@ -31,7 +32,6 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
-!/.projenrc.js
 /test-reports/
 junit.xml
 /coverage/
@@ -39,10 +39,7 @@ junit.xml
 /dist/changelog.md
 /dist/version.txt
 !/.github/workflows/release.yml
-!/.github/workflows/release-1.x.yml
-!/.mergify.yml
-!/.github/workflows/upgrade-2.x.yml
-!/.github/workflows/upgrade-1.x.yml
+!/.github/workflows/upgrade-runtime-dependencies-2.x.yml
 !/.github/pull_request_template.md
 !/test/
 !/tsconfig.dev.json
@@ -59,11 +56,12 @@ tsconfig.json
 !/git-hooks/README.md
 !/git-hooks/setup.sh
 !/.github/ISSUE_TEMPLATE/config.yml
-!/.github/ISSUE_TEMPLATE/bug.md
-!/.github/ISSUE_TEMPLATE/feature-request.md
 !/SECURITY.md
+!/.github/workflows/security.yml
 !/.github/workflows/triage.yml
-!/.github/workflows/dependabot-security-alerts.yml
+!/.github/workflows/stale.yml
+!/.github/workflows/upgrade-configuration-2.x.yml
+!/.github/workflows/upgrade-dev-dependencies-2.x.yml
+!/.github/workflows/upgrade-compiler-dependencies-2.x.yml
 !/src/_loadurl.js
-!/.backportrc.json
-!/.github/workflows/backport.yml
+!/.projenrc.js
